@@ -110,6 +110,8 @@ run:
 - if $(test -e "$name"):
   - log_e: '$name already exists, cannot proceed.'
 - log_i: 'Creating Express.JS project $basename in $dirname ...'
+- cl: mkdir -p "$dirname"
+- cl: cd "$dirname"
 - cl: express --css stylus --ejs "$basename"
 - dda_c: $basename
 - cl: cd "$basename"
