@@ -97,6 +97,8 @@ run:
 - $basename~: $(basename "$name")
 - if $(test -e "$name"):
   - log_e: '$name already exists, cannot proceed.'
+- cl: mkdir -p "$dirname"
+- cl: cd "$dirname"
 - cl: cp -r *appnodejs "$basename"
 - dda_c: "$basename"
 - cl: cd "$basename"
