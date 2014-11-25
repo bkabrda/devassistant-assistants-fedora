@@ -33,6 +33,7 @@ dependencies:
   - rpm: ['nodejs-delayed-stream']
   - rpm: ['nodejs-devel']
   - rpm: ['nodejs-editor']
+  - rpm: ['nodejs-express']
   - rpm: ['nodejs-forever-agent']
   - rpm: ['nodejs-form-data']
   - rpm: ['nodejs-formidable']
