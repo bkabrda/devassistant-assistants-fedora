@@ -14,7 +14,7 @@ run:
     - ask_input:
         prompt: "Your e-mail address, please"
         message: "Your git configuration is incomplete!"
-  - if not $(echo "$email" | grep -q '\w\+@\w\+\.\w\+'):
+  - if not $(echo "$email" | grep -q '.\+@.\+\..\+'):
     - log_e: "Not a valid e-mail address: $email"
   - cl: git config --global user.email "$email"
 
