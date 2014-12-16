@@ -2,7 +2,7 @@
 
 MODULE_CONFIG=/etc/httpd/conf.modules.d/00-base.conf
 USERDIR_CONF=/etc/httpd/conf.d/userdir.conf
-SAMPLE_PHPMYADMIN=/usr/share/phpMyAdmin/config.sample.inc.php
+SAMPLE_PHPMYADMIN=/usr/share/doc/phpMyAdmin/config.sample.inc.php
 NEW_PHPMYADMIN=/usr/share/phpMyAdmin/config.inc.php
 PHP=/usr/bin/php
 
