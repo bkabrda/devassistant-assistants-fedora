@@ -82,6 +82,8 @@ run:
 - if $docker:
   - $docker_image~:
     - docker_build: .
+  - if $(which chcon):
+    - cl: chcon -Rt svirt_sandbox_file_t .
 
 - log_i: 'Django project $basename in $dirname has been created.'
 - if $venv:
